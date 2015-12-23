@@ -5,7 +5,7 @@
 % Set {innerside margin / outerside margin / topmargin / bottom margin}  and
 % other page dimensions
 \ifsetCustomMargin
-  \RequirePackage[left=37mm,right=30mm,top=35mm,bottom=30mm]{geometry}
+  \RequirePackage[left=30mm,right=30mm,top=25mm,bottom=25mm]{geometry}
   \setFancyHdr % To apply fancy header after geometry package is loaded
 \fi
 
@@ -18,6 +18,7 @@
   % Set your custom font here and use `customfont' in options. Leave empty to
   % load computer modern font (default LaTeX font).
   \RequirePackage{helvet}
+
 \fi
 
 % *****************************************************************************
@@ -56,7 +57,6 @@
 % ********************************** Tables ************************************
 \usepackage{booktabs} % For professional looking tables
 \usepackage{multirow}
-
 %\usepackage{multicol}
 %\usepackage{longtable}
 %\usepackage{tabularx}
@@ -68,6 +68,62 @@
 \usepackage{amsmath}
 \usepackage{amssymb}
 \usepackage{siunitx} % use this package module for SI units
+
+% propios
+\usepackage{times}
+\usepackage{url}
+\usepackage{latexsym}
+\usepackage{graphicx} % figuras
+% \graphicspath{ {images/} }
+\usepackage[spanish]{babel}
+% \usepackage{fontspec}
+% \setmainfont{Arial}
+
+% \usepackage{subfigure} % subfigurasq
+% paquetes personales para borrador
+\usepackage[usenames]{color}
+\definecolor{red}{RGB}{255,0,0}
+
+\usepackage[table,xcdraw]{xcolor}
+\usepackage{csquotes}
+
+
+%%%%%%%%%% SI QUIEREN SELLO DE AGUA Y COLORES
+% \usepackage{eso-pic}
+% \newcommand\BackgroundPic{
+% \put(0,0){
+% \parbox[b][\paperheight]{\paperwidth}{%
+% \vfill
+% \centering
+% \includegraphics[width=\paperwidth/2,%height=\paperheight,
+% keepaspectratio]{Figs/logoPUCP_Binarizado.png}%
+% \vfill
+% }}}
+
+% \usepackage[all]{background}
+% \usepackage{tikz}
+%
+% \usetikzlibrary{calc}
+% \definecolor{header_pucp}{RGB}{175,12,31}
+% \definecolor{footer_pucp}{RGB}{129,18,28}
+%
+% \newcommand{\MyTikzLogo}{% For a logo drawn with TikZ
+% \begin{tikzpicture}[remember picture,overlay]%
+%   \node (nw) at (current page.north west) {};
+%   \node (bard) at (nw) [anchor=north west,fill=header_pucp,minimum width=\paperwidth,minimum height=0.05\paperheight] {};
+%
+%   \node (sw) at (current page.south west) {};
+%   \node (bard) at (sw) [anchor=south west,fill=footer_pucp,minimum width=\paperwidth,minimum height=0.05\paperheight] {};
+% \end{tikzpicture}
+%
+% }
+%
+% \SetBgContents{\MyTikzLogo}% Set tikz picture
+% \SetBgPosition{current page.north west}% Select location
+% \SetBgOpacity{1.0}% Select opacity
+% \SetBgAngle{0.0}% Select roation of logo
+% \SetBgScale{1.0}% Select scale factor of logo
+%%%%%%%%%% SI QUIEREN SELLO DE AGUA Y COLORES
 
 
 % ******************************* Line Spacing *********************************
@@ -191,5 +247,5 @@
 %\fi
 
 % Example todo: \mynote{Hey! I have a note}
-
-
+\usepackage{fontspec}
+\setmainfont{Arial}
